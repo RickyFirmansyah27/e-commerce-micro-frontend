@@ -31,7 +31,6 @@ const Orders = ({ loading, setLoading }) => {
   ) : (
     <div className="bg-white p-8 rounded-md w-full">
       <div className="flex items-center justify-center">
-        {/* Your search component here */}
 
         <div>
           <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">

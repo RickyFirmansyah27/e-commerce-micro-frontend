@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ProductCard = ({ index, product }) => {
   return (
-    <div key={index} className="mx-auto mt-11 w-80 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg">
+    <div key={index} className="mx-auto mt-11 w-80 transform overflow-hidden rounded-lg shadow-md duration-300 hover:scale-105 hover:shadow-lg" style={{ backgroundColor: 'white' }}>
       <Link to={`${product.id}`}>
         <img src={product.image} alt="Product" className="h-72 w-full object-contain object-center" />
         <div className="px-4 py-3 w-72">

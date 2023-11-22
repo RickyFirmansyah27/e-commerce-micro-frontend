@@ -11,18 +11,21 @@ const CheckoutPage = () => {
       <div className="py-16 px-4 md:px-6 2xl:px-0 flex justify-center items-center 2xl:mx-auto 2xl:container">
         <div className="flex flex-col justify-start items-start w-full space-y-9">
           <div className="flex justify-start flex-col items-start space-y-2">
-            <p className="text-3xl lg:text-4xl leading-7 lg:leading-9 dark:text-gray-50 font-bold text-gray-700 text-2xls">
+            <p className="text-3xl md:text-4xl font-bold leading-normal text-black dark:text-black">
               Place Your Order
             </p>
           </div>
 
           <div className="flex flex-col xl:flex-row justify-center xl:justify-between space-y-6 xl:space-y-0 xl:space-x-6 w-full ">
-            <div className="flex flex-col sm:flex-row xl:flex-col justify-center items-center  dark:bg-gray-800 py-7 sm:py-0 xl:py-10 px-10 xl:w-full ">
+            <div
+              className="flex flex-col sm:flex-row xl:flex-col justify-center items-center  dark:bg-gray-800 py-7 sm:py-0 xl:py-10 px-10 xl:w-full "
+              style={{ backgroundColor: "white" }}
+            >
               <div className="flex flex-col justify-start items-start w-full space-y-4">
-                <p className="text-xl md:text-2xl leading-normal text-gray-800 dark:text-gray-50">
+                <p className="text-xl md:text-2xl leading-normal text-black dark:text-black">
                   {product?.title}
                 </p>
-                <p className="text-base font-semibold leading-none text-gray-600 dark:text-white">
+                <p className="text-base font-semibold leading-none text-black dark:text-black">
                   {product?.price}
                 </p>
               </div>
@@ -31,7 +34,10 @@ const CheckoutPage = () => {
               </div>
             </div>
 
-            <div className="p-8 0 dark:bg-gray-800 flex flex-col lg:w-full xl:w-3/5">
+            <div
+              className="p-8 0 dark:bg-gray-800 flex flex-col lg:w-full xl:w-3/5"
+              style={{ backgroundColor: "white" }}
+            >
               <div className="flex items-center justify-center md:justify-center">
                 <p className="font-bold text-gray-700 text-2xl">Checkout</p>
               </div>
