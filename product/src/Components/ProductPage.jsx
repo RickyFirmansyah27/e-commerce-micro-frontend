@@ -78,7 +78,7 @@ export default ({loading,setLoading}) => {
     
               </div>
     
-                <Link to={`/orders/${productId}/checkout`} state={{ product }}>
+                <Link to={`/orders/checkout/${productId}`} state={{ product }}>
                 <button type="button" className="h-14 px-6 py-2 font-semibold rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white">
                 Buy Now
               </button>
