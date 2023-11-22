@@ -45,7 +45,7 @@ module.exports = (_, argv) => ({
       filename: "delivery-app.js",
       remotes: {},
       exposes: {
-        "./DeliveryApp": "./src/App.jsx",
+        './delivery': './src/App.jsx',
       },
       shared: {
         ...deps,

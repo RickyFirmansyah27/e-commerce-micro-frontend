@@ -47,8 +47,12 @@ module.exports = (_, argv) => ({
 
       },
       exposes: {
-        "./ProductApp": "./src/App.jsx",
-        "./ProductCard": "./src/Components/ProudctCard.jsx"
+        "./product": "./src/App.jsx",
+        "./ProductCard": "./src/Components/ProductCard.jsx",
+        "./ProductList": "./src/Components/ProductLists.jsx",
+        "./ProductPage": "./src/Components/ProductPage.jsx",
+        "./Search": "./src/Components/Search.jsx",
+        "./Breadcrumbs": "./src/Components/Breadcrumbs.jsx"
       },
       shared: {
         ...deps,
