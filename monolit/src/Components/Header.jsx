@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -17,9 +18,10 @@ const Header = () => {
           <Link to="/" className="font-bold text-gray-700 text-2xl">Shop.</Link>
 
           <div className="hidden md:flex space-x-3 flex-1 lg:ml-8">
-            <Link to="/" className="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">Electronics</Link>
-            <Link to="/" className="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">Fashion</Link>
-            <Link to="/" className="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">More</Link>
+            <Link to="/" className="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">Home</Link>
+            <Link to="/products" className="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">Products</Link>
+            <Link to="/orders" className="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">Order</Link>
+            <Link to="/delivery" className="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">Delivery</Link>
           </div>
 
           <div className="flex items-center space-x-4">

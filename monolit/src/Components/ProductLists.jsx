@@ -15,6 +15,7 @@ const ProductList = ({ loading, setLoading }) => {
     if (!products.length) {
       fetchProducts();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [products]);
 
   async function fetchProducts() {

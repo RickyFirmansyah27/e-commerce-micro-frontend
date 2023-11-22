@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link, useParams } from "react-router-dom";
 import Breadcrumbs from "./Breadcrumbs";
 import { useEffect, useState } from "react";
@@ -12,6 +13,7 @@ const ProductPage = ({ loading, setLoading }) => {
     if (!Object.keys(product).length) {
       fetechProducts();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [product]);
 
   async function fetechProducts() {

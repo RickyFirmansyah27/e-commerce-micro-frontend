@@ -10,6 +10,7 @@ const Orders = ({ loading, setLoading }) => {
     if (!orders.length) {
       fetchOrders();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [orders]);
 
   async function fetchOrders() {
