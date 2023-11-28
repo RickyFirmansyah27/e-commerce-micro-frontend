@@ -21,15 +21,15 @@ eval("__webpack_require__.r(__webpack_exports__);\nPromise.all(/*! import() */[_
 /***/ }),
 
 /***/ "webpack/container/reference/order":
-/*!***********************************************************!*\
-  !*** external "order@http://localhost:9002/order-app.js" ***!
-  \***********************************************************/
+/*!********************************************************************************!*\
+  !*** external "order@e-commerce-micro-frontend-order.vercel.app/order-app.js" ***!
+  \********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var __webpack_error__ = new Error();
 module.exports = new Promise((resolve, reject) => {
 	if(typeof order !== "undefined") return resolve();
-	__webpack_require__.l("http://localhost:9002/order-app.js", (event) => {
+	__webpack_require__.l("e-commerce-micro-frontend-order.vercel.app/order-app.js", (event) => {
 		if(typeof order !== "undefined") return resolve();
 		var errorType = event && (event.type === 'load' ? 'missing' : event.type);
 		var realSrc = event && event.target && event.target.src;

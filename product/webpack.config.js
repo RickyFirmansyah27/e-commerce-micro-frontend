@@ -45,7 +45,7 @@ module.exports = (_, argv) => ({
       name: "product",
       filename: "product-app.js",
       remotes: {
-        "order":"order@http://localhost:9002/order-app.js"
+        "order":"order@e-commerce-micro-frontend-order.vercel.app/order-app.js"
       },
       exposes: {
         "./product": "./src/App.jsx",
