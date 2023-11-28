@@ -67,15 +67,15 @@ module.exports = new Promise((resolve, reject) => {
 /***/ }),
 
 /***/ "webpack/container/reference/product":
-/*!***************************************************************!*\
-  !*** external "product@http://localhost:9001/product-app.js" ***!
-  \***************************************************************/
+/*!**********************************************************************************************!*\
+  !*** external "product@https://e-commerce-micro-frontend-product.vercel.app/product-app.js" ***!
+  \**********************************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var __webpack_error__ = new Error();
 module.exports = new Promise((resolve, reject) => {
 	if(typeof product !== "undefined") return resolve();
-	__webpack_require__.l("http://localhost:9001/product-app.js", (event) => {
+	__webpack_require__.l("https://e-commerce-micro-frontend-product.vercel.app/product-app.js", (event) => {
 		if(typeof product !== "undefined") return resolve();
 		var errorType = event && (event.type === 'load' ? 'missing' : event.type);
 		var realSrc = event && event.target && event.target.src;
