@@ -3,6 +3,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
+  mode: 'development',
   output: {
     publicPath: "http://localhost:9003/",
   },
